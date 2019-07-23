@@ -29,7 +29,7 @@
             }
         },
         "BootstrapStorageAccount": {
-            "defaultValue": "scaledfwbootstrap",
+            "defaultValue": "vmseries",
             "type": "String",
             "metadata": {
                 "description": "Storage account hosting the bootstrap files"
@@ -43,14 +43,14 @@
             }
         },
         "StorageAccountFileShare": {
-            "defaultValue": "sharedfw",
+            "defaultValue": "bootstrap2",
             "type": "String",
             "metadata": {
                 "description": "The file share in the storage account where the bootstrap files are located"
             }
         },
         "SharedFWFileShareDirectory": {
-            "defaultValue": "egressbootstrap",
+            "defaultValue": "",
             "type": "String",
             "metadata": {
                 "description": "The subdirectory hosting the bootstrap files. Only required if hosting multiple bootstrap directories on the same share"
@@ -72,7 +72,7 @@
             }
         },
         "untrustSubnetName": {
-            "defaultValue": "EgressFW-Untrust",
+            "defaultValue": "Untrust",
             "type": "String",
             "metadata": {
                 "description": "Subnet for Egress firewall Untrust Network"
@@ -86,7 +86,7 @@
             }
         },
         "trustSubnetName": {
-            "defaultValue": "EgressFW-Trust",
+            "defaultValue": "Trust",
             "type": "String",
             "metadata": {
                 "description": "Subnet for Egress firewall Trust Network"
@@ -107,7 +107,7 @@
             }
         },
         "imageSku": {
-            "defaultValue": "bundle1",
+            "defaultValue": "byol",
             "allowedValues": [
                 "byol",
                 "bundle1",
@@ -180,14 +180,14 @@
             }
         },
         "enable-palo-alto-bootstrap": {
-            "defaultValue": "false",
+            "defaultValue": "true",
             "type": "Bool",
             "metadata": {
                 "description": "Specifies if bootstrap storage account will be used"
             }
         },
         "virtualMachine-count": {
-            "defaultValue": 1,
+            "defaultValue": 2,
             "type": "Int",
             "metadata": {
                 "description": "Number of NVA VMs to be created."
