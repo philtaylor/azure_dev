@@ -5,6 +5,7 @@ Deploy a shared firewall infrastructure described in the Paloaltonetworks Azure 
 ![alt text](https://raw.githubusercontent.com/philtaylor/azure_dev/master/Architecture-Diagram.png)
 
 [<img src="http://azuredeploy.net/deploybutton.png"/>](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fjharris10%2Fshared-fw-ref-architecture%2Fmaster%2FazureDeploy.json)
+[<img src="http://azuredeploy.net/deploybutton.png"/>](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fphiltaylor%2Fazure_dev%2Fmaster%2FazureDeploy.json)
 
 This template automates deployment of firewall LB sandwich environment for Egress Security.
 It includes following components:
@@ -25,5 +26,5 @@ It includes following components:
 
  
  If bootstraping with default configuration file is used default credentials are:
- - Username: pandemo
- - Password: Dem0pa$$w0rd
+ - Username: paloalto
+ - Password: PaloAlt0!123!!
